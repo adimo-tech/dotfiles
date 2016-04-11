@@ -15,7 +15,7 @@ export PATH=$PATH:~/bin
 # Node.js
 export PATH="./node_modules/.bin:$PATH"
 
-# ---- Command prompt
+# ---- Aliases
 # GIT
 alias gs='git status'
 alias gl='git pull'
