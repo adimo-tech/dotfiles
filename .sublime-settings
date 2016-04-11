@@ -1,7 +1,14 @@
 {
 	"ignored_packages": [ "Vintage" ],
 	"tab_size": 2,
+  	"word_wrap": true,
 	"translate_tabs_to_spaces": true,
-  "trim_trailing_white_space_on_save": true,
-  "open_files_in_new_window": false
+  	"trim_trailing_white_space_on_save": true,
+  	"open_files_in_new_window": false,
+  	"bold_folder_labels": true,
+  	"folder_exclude_patterns": [
+    		".git",
+    		"node_modules",
+    		"bower_components"
+  	]
 }
