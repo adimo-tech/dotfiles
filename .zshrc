@@ -7,7 +7,7 @@ setopt prompt_subst
 autoload -U colors && colors
 
 # Set prompt
-export PROMPT='%{$fg[green]%}$%~%{$reset_color%} '
+export PROMPT='%{$fg[green]%}%~%{$reset_color%} '
 export RPROMPT='$(git_prompt_string)'
 
 parse_git_branch() {
@@ -69,5 +69,5 @@ alias ga='git add . -A && gs'
 alias gco='git checkout'
 
 gc() {
-	git commit -m "'"$*"'"
+	git commit -m "$*"
 }
