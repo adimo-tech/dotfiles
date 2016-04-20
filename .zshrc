@@ -54,11 +54,20 @@ git_prompt_string() {
   echo "$(parse_git_state_color)$(parse_git_branch)%{$reset_color%}"
 }
 
-# Global PATH
+# ---- PATH
+# Global
 export PATH=$PATH:~/bin
+
+# Brew
+PATH="/usr/local/bin:$PATH"
+PATH="/usr/local/sbin:$PATH"
+PATH="/usr/sbin:$PATH"
 
 # Node.js
 export PATH="./node_modules/.bin:$PATH"
+
+# PHP
+export PATH="$(brew --prefix homebrew/php/php70)/bin:$PATH"
 
 # ---- Aliases
 # GIT
@@ -71,3 +80,6 @@ alias gco='git checkout'
 gc() {
 	git commit -m "$*"
 }
+
+# Brew update
+alias brew-update='brew update && brew upgrade --all && brew prune && brew cleanup && brew prune && brew doctor';
