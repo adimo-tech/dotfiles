@@ -78,8 +78,11 @@ alias ga='git add . -A && gs'
 alias gco='git checkout'
 
 gc() {
-	git commit -m "$*"
+  git commit -m "$*"
 }
+
+# Composer
+alias composer='php ~/composer.phar'
 
 # Brew update
 alias brew-update='brew update && brew upgrade --all && brew prune && brew cleanup && brew prune && brew doctor';
